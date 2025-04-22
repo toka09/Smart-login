@@ -101,7 +101,7 @@ function login() {
 }
 
 let userName = localStorage.getItem("uNameLogin");
-document.querySelector("#welcome").innerHTML = `Wlecome ${userName}`;
+document.querySelector("#welcome").innerHTML = `welcome ${userName}`;
 document.querySelector(".logout").addEventListener("click", function(){
     localStorage.removeItem("uNameLogin")
 })
