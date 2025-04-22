@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&family=Saira+Condensed:wght@300;400;500;600;700;800&display=swap");
+
+:root {
+    --whiteColor: #FFF;
+    --BlackColor: #000;
+    --grayColor: #c7c7c7;
+}
+
+body {
+    font-family: "Skranji", system-ui;
+}
+p {
+    margin-bottom: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+::selection {
+    background-color: var(--grayColor);
+}
+
+.login-system {
+    min-height: 100vh;
+    background-image: url(/images/walking-in-beautiful-day-ji-1600x900.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation: animateBg 5s linear infinite;
+}
+
+@-webkit-keyframes animateBg {
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+@keyframes animateBg {
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.login-box {
+    width: 400px;
+    background-color: transparent;
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 48px 30px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+h1 {
+    font-size: 35px;
+}
+.form-control,
+.form-control:focus,
+button {
+    border: 0;
+    border-radius: 0;
+    background-color: transparent;
+    box-shadow: none;
+    outline: 0;
+}
+
+.form-control {
+    padding-top: 20px;
+    padding-inline-start: 10px;
+    padding-inline-end: 40px;
+}
+
+.form-control:focus,
+.form-control {
+    color: #000;
+    border-bottom: 1px solid var(--whiteColor);
+
+}
+
+label,
+.icon {
+    top: 10px;
+}
+
+.icon {
+    right: 15px;
+}
+
+label {
+    transition: 0.3s color, 0.3s -webkit-transform;
+    transition: 0.3s transform, 0.3s color;
+    transition: 0.3s transform, 0.3s color, 0.3s -webkit-transform;
+    padding-inline-start: 5px;
+    pointer-events: none;
+}
+
+::placeholder {
+    opacity: 0 !important;
+}
+
+.form-parent>.form-control:not(:-moz-placeholder-shown)~label {
+    transform: scale(0.85) translateY(-15px);
+}
+
+.form-parent>.form-control:not(:-ms-input-placeholder)~label {
+    transform: scale(0.85) translateY(-15px);
+    color: var(--grayColor);
+}
+
+.form-parent>.form-control:focus~label,
+.form-parent>.form-control:not(:placeholder-shown)~label {
+    transform: scale(0.85) translateY(-15px);
+    color:#FFF;
+}
+
+.btn-style {
+    background-color: var(--whiteColor);
+    border-radius: 30px;
+    padding: 8px 0;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.sign-link {
+    transition: text-decoration 0.3s;
+    transition: text-decoration 0.3s, -webkit-text-decoration 0.3s;
+    font-weight: 700;
+}
+
+.sign-link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 575.98px) {
+    h1 {
+        font-size: 30px;
+    }
+}
+@media (max-width: 410.38px) {
+    .login-box {
+        padding: 48px 20px;
+        height: 100vh;
+        width: 100%;
+        border: 0;
+        border-radius: 0;
+    }
+}

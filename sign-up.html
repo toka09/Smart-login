@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log-in</title>
+    <link href="https://fonts.googleapis.com/css2?family=Skranji:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Condensed+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/fontawesome-free-6.7.2-web/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body id="bg">
+    <main class="login-system d-flex flex-column justify-content-center align-items-center py-5">
+        <section id="" class="login-box position-relative text-black">  
+            <div class="container">   
+                <h1 class="text-center mb-5 text-capitalize">Smart Login System</h1>
+                    <div class="form-parent position-relative mb-4">
+                        <input type="text" class="form-control" id="signupUser" placeholder="name">
+                        <label for="signupUser" class="position-absolute">Name</label>
+                        <div class="icon position-absolute">
+                            <span class="fa fa-user"></span>
+                        </div>
+                    </div>
+                    <div class="form-parent position-relative mb-4">
+                        <input type="email" class="form-control" id="signupEmail" placeholder="email">
+                        <label for="signupEmail" class="position-absolute">Email address</label>
+                        <div class="icon position-absolute">
+                            <span class="fa fa-envelope"></span>
+                        </div>
+                    </div>
+                    <div class="form-parent position-relative mb-4">
+                        <input type="password" class="form-control" id="signupPassword" placeholder="password">
+                        <label for="signupPassword" class="position-absolute">Password</label>
+                        <div class="icon position-absolute">
+                            <span class="fa fa-lock"></span>
+                        </div>
+                    </div>
+                    <button type="submit" onclick="signUp()" id="alert" class="sign-up mb-4 w-100 text-capitalize btn-style">sign up</button>
+                    <p class="text-white text-center ">You have an account? <a href="index.html" class="sign-link">Sign in</a></p>
+            </div>
+        </section>
+    </main>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

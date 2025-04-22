@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Login Sign-in</title>
+    <link href="https://fonts.googleapis.com/css2?family=Skranji:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/fontawesome-free-6.7.2-web/css/all.min.css">
+    <!-- Local BootstrapV5 -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- CSS files -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body id="bg">
+    <main class="login-system d-flex flex-column justify-content-center align-items-center">
+        <section id="" class="login-box position-relative text-black">
+            <div class="container">
+                <h1 class="text-center mb-5 text-capitalize">Smart Login System</h1>
+                    <div class="form-parent position-relative mb-4">
+                        <input type="email" class="form-control" id="loginEmail" placeholder="email">
+                        <label for="loginEmail" class="position-absolute">Email address</label>
+                        <div class="icon position-absolute">
+                            <span class="fa fa-envelope"></span>
+                        </div>
+                    </div>
+                    <div class="form-parent position-relative mb-4">
+                        <input type="password" class="form-control" id="loginPassword" placeholder="password">
+                        <label for="loginPassword" class="position-absolute">Password</label>
+                        <div class="icon position-absolute">
+                            <span class="fa fa-lock"></span>
+                        </div>
+                    </div>
+                    <button type="submit"  onclick="login()" id="alert" class="mb-4 w-100 btn-style">Login</button>
+                    <p class=" text-black text-center">Don’t have an account? <a href="sign-up.html"
+                            class="sign-link">Sign Up</a></p>
+            </div>
+        </section>
+    </main>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

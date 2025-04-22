@@ -1,0 +1,20 @@
+nav{
+    backdrop-filter: blur(1px) !important;
+    background-color: rgba(43, 24, 24, 0.436);
+    font-family: "Skranji", system-ui;
+
+}
+body{
+    font-family: "Skranji", system-ui;
+}
+
+.container-md{
+    background-color: rgba(43, 24, 24, 0.715);
+    color: white;
+
+}
+@media (max-width: 410.38px){
+.welcome-box {
+    height: 100%;
+}
+}
